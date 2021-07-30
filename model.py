@@ -64,4 +64,4 @@ def process_addresses(addresses: List[Dict[str, Union[int, str]]]) -> List[Dict[
             "Other": []
         }
     ]
-    return tmp;
+    return tmp
