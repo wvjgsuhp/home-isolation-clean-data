@@ -24,7 +24,26 @@ $ python test.py
 
 สามารถดาวน์โหลดดูข้อมูลตัวอย่างและผลลัพธ์ที่คาดหวังได้ที่ [Sample Data - Train.xlsx](https://drive.google.com/file/d/19LNypJN7lVpLCdo3D9-RWud2W36YBxeA/view?usp=sharing)
 
-#### JSON Format
+#### JSON Format สำหรับ Web API
+**Input**
+```json
+[
+  {
+    "id": 1,
+    "address": "174/243 คอนโดบ้านสวนอยู่นิรันดร์ ตึกB ซอยศรีพรสวรรค์ ตำบลสวนใหญ่ อำเภอเมืองนนทบุรี จังหวัดนนทบุรี"
+  },
+  {
+    "id": 2,
+    "address": "..."
+  },
+  {
+    "id": 3,
+    "address": "..."
+  }
+]
+```
+
+**Output**
 ```json
 [
   {
@@ -41,6 +60,9 @@ $ python test.py
     "Other": [
       
     ]
+  },
+  {
+    ...
   },
   {
     ...

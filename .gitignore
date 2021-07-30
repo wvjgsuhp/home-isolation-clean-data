@@ -1,2 +1,10 @@
+## Cache Files
 **/__pycache__
 **/.ipynb_**
+**/.DS_Store
+
+# Dataset
+data/deprecated
+
+# Experiment files
+**.ipynb
