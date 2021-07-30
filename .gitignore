@@ -1,3 +1,10 @@
+## Cache Files
 **/__pycache__
 **/.ipynb_**
-sample.json
+**/.DS_Store
+
+# Dataset
+data/deprecated
+
+# Experiment files
+**.ipynb
