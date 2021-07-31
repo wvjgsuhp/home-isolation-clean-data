@@ -7,7 +7,7 @@ from model import process_addresses
 
 def assert_list_of_str(obj: Dict[str, Any], key: str) -> None:
     simple_assert(obj, 'Other', list)
-    a_list = obj.get(key)
+    a_list: List[Any] = obj.get(key)
     for element in a_list:
         found_type = type(element)
         error_message = f'`{key}` must be {List[str]}, but got {List[found_type]}'
