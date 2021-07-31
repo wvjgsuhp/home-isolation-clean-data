@@ -21,7 +21,7 @@ $ python test.py
 
 เพื่อทดสอบว่า output นั้นถูกต้องไหม หากสามารถรันได้โดยไม่มี error สามารถ pull request มาที่ branch นี้ได้
 
-ไฟล์ `server.py` นั้นมีไว้เพื่อเขียนเป็น endpoint โดยจะเรียกฟังก์ชั่น process_address อีกที หากต้องการปรับเปลี่ยนการเขียน server สามารถ pull request มาได้เช่นกัน
+ไฟล์ [`server.py`](/server.py) นั้นมีไว้เพื่อเขียนเป็น endpoint โดยจะเรียกฟังก์ชั่น process_address อีกที หากต้องการปรับเปลี่ยนการเขียน server สามารถ pull request มาได้เช่นกัน
 
 ### ข้อมูลตัวอย่างและ Output ที่คาดหวัง
 
