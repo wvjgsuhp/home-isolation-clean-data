@@ -1,6 +1,6 @@
-from typing import List, Dict, Union
+from custom_types import Input, Output
 
-def process_addresses(addresses: List[Dict[str, Union[int, str]]]) -> List[Dict[str, Union[str, List[str]]]]:
+def process_addresses(addresses: Input) -> Output:
     """
     # TODO:
     For contributor, please edit this function as you wish. Just
@@ -49,7 +49,7 @@ def process_addresses(addresses: List[Dict[str, Union[int, str]]]) -> List[Dict[
     ##################################
     # Implement your code here       #
     ##################################
-    tmp = [
+    tmp: Output = [
         {
             "id": 1,
             "HouseNumber": "174/243",

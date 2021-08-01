@@ -1,4 +1,5 @@
-from typing import Dict, List, Union
+from flask.wrappers import Response
+from custom_types import Input, Output
 
 from flask import Flask, request, abort, jsonify
 
@@ -8,7 +9,7 @@ app: Flask = Flask(__name__);
 
 
 @app.route("/api/format_addresses", methods=["POST"])
-def format_address() -> List[Dict[str, Union[str, List[str]]]]:
+def format_address() -> Response:
     """
     Endpoint to format input address. This endpoint call model.process_address
     to format data according to the follow input/output.
@@ -47,10 +48,10 @@ def format_address() -> List[Dict[str, Union[str, List[str]]]]:
     if not request.json:
         abort(400);
     
-    addresses: dict = request.json;  # get request JSON
-    formatted_addresses: dict = process_addresses(addresses);  # process requested JSON
+    addresses: Input = request.json;  # get request JSON
+    formatted_addresses: Output = process_addresses(addresses);  # process requested JSON
 
-    return jsonify(formatted_addresses);
+    return jsonify(formatted_addresses)
 
 
 def main() -> None:
